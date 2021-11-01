@@ -30,4 +30,13 @@ if (process.env.NODE_ENV === 'development') {
     if (rootElement) mount({ element: rootElement, defaultHistory: createBrowserHistory() });
 }
 
+const localStorageCurrentData = localStorage.getItem('test');
+
+
+// * Local Storage Checker 
+console.log(
+    `%c These are the localStorage data that I found ===> ${ localStorageCurrentData || 'I found nothing ... 🙄' }`,
+    'background-color: red; color: #fff; font-size: 1.5rem; padding: 4px; border-radius: 8px',
+);
+
 export { mount };
