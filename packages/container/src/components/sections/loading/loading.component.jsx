@@ -10,7 +10,7 @@ function Loading() {
                     role='status'
                     style={{ width: '3rem', height: '3rem' }}
                 >
-                    <span class='visually-hidden'>Loading...</span>
+                    <span className='visually-hidden'>Loading...</span>
                 </div>
                 <span className='h4'>Loading...</span>
             </div>
