@@ -4,7 +4,11 @@ import React from 'react';
 import('contactUs/ContactUsApp');
 
 function ContactUsMount() {
-    return <app-root></app-root>;
+    return (
+        <>
+            <angular-component></angular-component>
+        </>
+    );
 }
 
 export default ContactUsMount;
