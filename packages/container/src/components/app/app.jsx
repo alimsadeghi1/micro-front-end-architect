@@ -16,15 +16,16 @@ import Home from '@components/views/home/home.view';
 // * Import Redux stuff
 import { Provider } from 'react-redux';
 import { store } from '@redux/store';
+import Loading from '@components/sections/loading/loading.component';
 
 function App() {
 
     return (
         <Provider store={store}>
-            <Suspense fallback={<h1>Loading ...</h1>}>
+            <Suspense fallback={<Loading />}>
                 <BrowserRouter>
                     <Header />
-
+                    
                     <Switch>
                         <Route path='/dashboard' component={Dashboard} />
                         <Route path='/auth' component={Auth} />
